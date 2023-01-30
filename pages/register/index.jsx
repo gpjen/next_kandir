@@ -1,4 +1,4 @@
-import bg from "../../public/palm--oil.jpg";
+import bg from "../../public/palm--oil.webp";
 import Link from "next/link";
 
 export default function Register() {
