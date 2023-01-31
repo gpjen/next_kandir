@@ -25,17 +25,29 @@ export default function Example() {
         as="li"
         variant="small"
         color="gray"
-        className="p-1 font-semibold text-gray-600 hover:text-gray-700"
+        className="p-1 font-semibold text-gray-600/80 hover:text-gray-700"
       >
         <Link href="/" className="flex items-center">
           Home
+        </Link>
+      </Typography>
+
+
+      <Typography
+        as="li"
+        variant="small"
+        color="gray"
+        className="p-1 font-semibold text-gray-600/80 hover:text-gray-700"
+      >
+        <Link href="/profile" className="flex items-center">
+          Profil
         </Link>
       </Typography>
       <Typography
         as="li"
         variant="small"
         color="gray"
-        className="p-1 font-semibold text-gray-600 hover:text-gray-700"
+        className="p-1 font-semibold text-gray-600/80 hover:text-gray-700"
       >
         <Link href="/produc" className="flex items-center">
           Produk
@@ -45,10 +57,30 @@ export default function Example() {
         as="li"
         variant="small"
         color="gray"
-        className="p-1 font-semibold text-gray-600 hover:text-gray-700"
+        className="p-1 font-semibold text-gray-600/80 hover:text-gray-700"
       >
-        <Link href="/" className="flex items-center">
-          Home
+        <Link href="/business" className="flex items-center">
+          Bisnis
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="gray"
+        className="p-1 font-semibold text-gray-600/80 hover:text-gray-700"
+      >
+        <Link href="/business" className="flex items-center">
+          Lingkungan dan Sosial
+        </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="gray"
+        className="p-1 font-semibold text-gray-600/80 hover:text-gray-700"
+      >
+        <Link href="/career" className="flex items-center">
+          Karir
         </Link>
       </Typography>
     </ul>
