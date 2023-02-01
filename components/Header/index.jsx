@@ -5,6 +5,7 @@ import {
   Typography,
   Button,
   IconButton,
+  Input,
 } from "@material-tailwind/react";
 
 import Link from "next/link";
@@ -31,8 +32,6 @@ export default function Example() {
           Home
         </Link>
       </Typography>
-
-
       <Typography
         as="li"
         variant="small"
@@ -69,8 +68,8 @@ export default function Example() {
         color="gray"
         className="p-1 font-semibold text-gray-600/80 hover:text-gray-700"
       >
-        <Link href="/business" className="flex items-center">
-          Lingkungan dan Sosial
+        <Link href="/next" className="flex items-center">
+          Keberlanjutan
         </Link>
       </Typography>
       <Typography
@@ -82,6 +81,14 @@ export default function Example() {
         <Link href="/career" className="flex items-center">
           Karir
         </Link>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="gray"
+        className="p-1 font-semibold text-gray-600/80 hover:text-gray-700"
+      >
+        <Input color="green" label="Cari" size="md" />
       </Typography>
     </ul>
   );
@@ -100,16 +107,6 @@ export default function Example() {
             NUSAINA
           </Typography>
           <div className="hidden lg:block">{navList}</div>
-          <Link href="/login">
-            <Button
-              variant="gradient"
-              color="green"
-              size="sm"
-              className="hidden lg:inline-block"
-            >
-              <span>Login</span>
-            </Button>
-          </Link>
           <IconButton
             variant="text"
             className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
@@ -151,17 +148,6 @@ export default function Example() {
         <MobileNav open={openNav}>
           <div className="container mx-auto">
             {navList}
-            <Link href="/login">
-              <Button
-                variant="gradient"
-                size="sm"
-                fullWidth
-                className="mb-2"
-                color="green"
-              >
-                <span>Login</span>
-              </Button>
-            </Link>
           </div>
         </MobileNav>
       </Navbar>
