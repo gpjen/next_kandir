@@ -24,6 +24,12 @@ export default function Example() {
 
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+      <Link href="/news" className="flex items-center">
+        <li className="p-1 text-sm font-semibold text-gray-600/80 hover:text-gray-700">
+          Berita
+        </li>
+      </Link>
+
       <Link href="/product" className="flex items-center">
         <li className="p-1 text-sm font-semibold text-gray-600/80 hover:text-gray-700">
           Produk
@@ -38,13 +44,24 @@ export default function Example() {
             </div>
           </MenuHandler>
           <MenuList className="text-gray-700 bgBlur">
-            <MenuItem>Visi & Misi</MenuItem>
-            <MenuItem>Sejarah Singkat</MenuItem>
-            <MenuItem>Struktur Organisasi</MenuItem>
-            <MenuItem>Profil Manajemen</MenuItem>
-            <MenuItem>Wilayah</MenuItem>
-            <MenuItem>Anak Perusahaan</MenuItem>
-            <MenuItem>Penghargaan dan Pengakuan</MenuItem>
+            <Link href="/profile/history" className="outline-none">
+              <MenuItem>Sejarah Singkat</MenuItem>
+            </Link>
+            <Link href="/profile/visimisi" className="outline-none">
+              <MenuItem>Visi & Misi</MenuItem>
+            </Link>
+            <Link href="/profile/organizationalStructure" className="outline-none">
+              <MenuItem>Struktur Organisasi</MenuItem>
+            </Link>
+            <Link href="/profile/management" className="outline-none">
+              <MenuItem>Profil Manajemen</MenuItem>
+            </Link>
+            <Link href="/profile/region" className="outline-none">
+              <MenuItem>Wilayah Kerja</MenuItem>
+            </Link>
+            <Link href="/profile/awardsAndRecognition" className="outline-none">
+              <MenuItem>Sertivikat dan Penghargaan</MenuItem>
+            </Link>
           </MenuList>
         </Menu>
       </li>
