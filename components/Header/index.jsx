@@ -60,7 +60,7 @@ export default function Example() {
             <Link href="/investor/annualReport" className="outline-none">
               <MenuItem>Laporan Tahunan</MenuItem>
             </Link>
-            <Link href="/investor/FinancialStatements" className="outline-none">
+            <Link href="/investor/financialStatements" className="outline-none">
               <MenuItem>Laporan Keuangan</MenuItem>
             </Link>
             <Link href="/investor/prospect" className="outline-none">
@@ -96,11 +96,11 @@ export default function Example() {
           </MenuList>
         </Menu>
       </li>
-      <Link href="/career" className="flex items-center">
-        <li className="p-1 text-sm font-semibold text-gray-600/80 hover:text-gray-700">
+      <li className="p-1 text-sm font-semibold text-gray-600/80 hover:text-gray-700">
+        <Link href="/career" className="flex items-center">
           Karir
-        </li>
-      </Link>
+        </Link>
+      </li>
 
       <div className="relative text-gray-600">
         <input
