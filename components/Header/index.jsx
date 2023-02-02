@@ -2,11 +2,13 @@ import { useState, useEffect } from "react";
 import {
   Navbar,
   MobileNav,
-  Typography,
-  Button,
   IconButton,
-  Input,
+  Menu,
+  MenuHandler,
+  MenuList,
+  MenuItem,
 } from "@material-tailwind/react";
+import { FaCaretDown, FaSearch } from "react-icons/fa";
 
 import Link from "next/link";
 
@@ -22,90 +24,108 @@ export default function Example() {
 
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <Typography
-        as="li"
-        variant="small"
-        color="gray"
-        className="p-1 font-semibold text-gray-600/80 hover:text-gray-700"
-      >
-        <Link href="/" className="flex items-center">
-          Home
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="gray"
-        className="p-1 font-semibold text-gray-600/80 hover:text-gray-700"
-      >
-        <Link href="/profile" className="flex items-center">
-          Profil
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="gray"
-        className="p-1 font-semibold text-gray-600/80 hover:text-gray-700"
-      >
-        <Link href="/produc" className="flex items-center">
+      <Link href="/product" className="flex items-center">
+        <li className="p-1 text-sm font-semibold text-gray-600/80 hover:text-gray-700">
           Produk
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="gray"
-        className="p-1 font-semibold text-gray-600/80 hover:text-gray-700"
-      >
-        <Link href="/business" className="flex items-center">
-          Bisnis
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="gray"
-        className="p-1 font-semibold text-gray-600/80 hover:text-gray-700"
-      >
-        <Link href="/next" className="flex items-center">
-          Keberlanjutan
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="gray"
-        className="p-1 font-semibold text-gray-600/80 hover:text-gray-700"
-      >
-        <Link href="/career" className="flex items-center">
+        </li>
+      </Link>
+
+      <li>
+        <Menu placement="top-start">
+          <MenuHandler>
+            <div className="flex text-sm justify-start items-center p-1 font-semibold text-gray-600/80 hover:text-gray-700 cursor-pointer">
+              Profil <FaCaretDown />{" "}
+            </div>
+          </MenuHandler>
+          <MenuList className="text-gray-700 bgBlur">
+            <MenuItem>Visi & Misi</MenuItem>
+            <MenuItem>Sejarah Singkat</MenuItem>
+            <MenuItem>Struktur Organisasi</MenuItem>
+            <MenuItem>Profil Manajemen</MenuItem>
+            <MenuItem>Wilayah</MenuItem>
+            <MenuItem>Anak Perusahaan</MenuItem>
+            <MenuItem>Penghargaan dan Pengakuan</MenuItem>
+          </MenuList>
+        </Menu>
+      </li>
+
+      <li>
+        <Menu placement="top-start">
+          <MenuHandler>
+            <div className="flex text-sm justify-start items-center p-1 font-semibold text-gray-600/80 hover:text-gray-700 cursor-pointer">
+              Investor <FaCaretDown />{" "}
+            </div>
+          </MenuHandler>
+          <MenuList className="text-gray-700 bgBlur">
+            <Link href="/investor/annualReport" className="outline-none">
+              <MenuItem>Laporan Tahunan</MenuItem>
+            </Link>
+            <Link href="/investor/FinancialStatements" className="outline-none">
+              <MenuItem>Laporan Keuangan</MenuItem>
+            </Link>
+            <Link href="/investor/prospect" className="outline-none">
+              <MenuItem>Prospek</MenuItem>
+            </Link>
+          </MenuList>
+        </Menu>
+      </li>
+
+      <li>
+        <Menu placement="top-start">
+          <MenuHandler>
+            <div className="flex text-sm justify-start items-center p-1 font-semibold text-gray-600/80 hover:text-gray-700 cursor-pointer">
+              Keberlanjutan <FaCaretDown />{" "}
+            </div>
+          </MenuHandler>
+          <MenuList className="text-gray-700 bgBlur">
+            <Link href="/continuity/commitment" className="outline-none">
+              <MenuItem>Komitmen Keberlanjutan</MenuItem>
+            </Link>
+            <Link href="/continuity/communityResource" className="outline-none">
+              <MenuItem>Pengembangan Sumberdaya Masyarakat</MenuItem>
+            </Link>
+            <Link href="/continuity/efficiency" className="outline-none">
+              <MenuItem>Evisiensi Sumberdaya Dan Perubahan Iklim</MenuItem>
+            </Link>
+            <Link href="/continuity/complaintHandling" className="outline-none">
+              <MenuItem>Komunikasi Dan Penanganan Keluhan</MenuItem>
+            </Link>
+            <Link href="/continuity/report" className="outline-none">
+              <MenuItem>Laporan Keberlanjutan</MenuItem>
+            </Link>
+          </MenuList>
+        </Menu>
+      </li>
+      <Link href="/career" className="flex items-center">
+        <li className="p-1 text-sm font-semibold text-gray-600/80 hover:text-gray-700">
           Karir
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="gray"
-        className="p-1 font-semibold text-gray-600/80 hover:text-gray-700"
-      >
-        <Input color="green" label="Cari" size="md" />
-      </Typography>
+        </li>
+      </Link>
+
+      <div className="relative text-gray-600">
+        <input
+          type="search"
+          name="cari"
+          placeholder="Cari sesuatu"
+          className="bg-white h-8 px-5  rounded-full text-sm focus:outline-none focus:outline-green-700/50 focus:border-none border border-gray-500/50 w-full "
+        />
+      </div>
     </ul>
   );
 
   return (
     <header className="sticky top-0 z-10">
       <Navbar
-        className="mx-auto py-2 px-4 lg:px-10 lg:py-4"
-        blurred={true}
         fullWidth={true}
+        className="mx-auto w-full py-2 rounded-xl overflow-hidden rounded-t-none px-4 lg:px-10 lg:py-4 backdrop-saturate-200 backdrop-blur-2xl bg-opacity-70"
       >
         <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
-          <Typography
-            className="mr-4 font-bold cursor-pointer py-1"
+          <Link
+            href="/"
+            className="mr-4 font-bold cursor-pointer py-1 text-gray-700"
           >
             NUSAINA
-          </Typography>
+          </Link>
           <div className="hidden lg:block">{navList}</div>
           <IconButton
             variant="text"
@@ -146,9 +166,7 @@ export default function Example() {
           </IconButton>
         </div>
         <MobileNav open={openNav}>
-          <div className="container mx-auto">
-            {navList}
-          </div>
+          <div className="container mx-auto">{navList}</div>
         </MobileNav>
       </Navbar>
     </header>
