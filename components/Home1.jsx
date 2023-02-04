@@ -36,7 +36,7 @@ export default function Home1() {
               </Link>
               <Link
                 scroll={false}
-                href="#hero2"
+                href="/#hero2"
                 className=" py-1 font-semibold leading-7 text-white hover:scale-105 transition-all duration-200 ease-in-out"
               >
                 Informasi Lain <span aria-hidden="true">→</span>

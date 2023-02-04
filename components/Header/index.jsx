@@ -44,12 +44,6 @@ export default function Example() {
             </div>
           </MenuHandler>
           <MenuList className="text-gray-700 bgBlur">
-            <Link href="/profile/history" className="outline-none">
-              <MenuItem>Sejarah Singkat</MenuItem>
-            </Link>
-            <Link href="/profile/visimisi" className="outline-none">
-              <MenuItem>Visi & Misi</MenuItem>
-            </Link>
             <Link href="/profile/organizationalStructure" className="outline-none">
               <MenuItem>Struktur Organisasi</MenuItem>
             </Link>
@@ -131,7 +125,7 @@ export default function Example() {
   );
 
   return (
-    <header className="sticky top-0 z-10">
+    <header className="sticky top-0 z-10 mx-auto" style={{maxWidth:"1700px"}}>
       <Navbar
         fullWidth={true}
         className="mx-auto w-full py-2 rounded-xl overflow-hidden rounded-t-none px-4 lg:px-10 lg:py-4 backdrop-saturate-200 backdrop-blur-2xl bg-opacity-70"

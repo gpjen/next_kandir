@@ -28,7 +28,6 @@ html {
 }
 
 .hero1 {
-  background-size: cover;
   position: relative;
 }
 
@@ -43,8 +42,21 @@ html {
 
 }
 
+.contactUs {
+  position: relative;
+}
+
+.contactUs::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url("/maps1.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(40%) blur(3px) contrast(80%) ;
+}
+
 .hero3 {
   background-image: url("/bg-texture1.svg");
-  /* background-size: cover; */
-  
 }
