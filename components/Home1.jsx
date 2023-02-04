@@ -17,7 +17,7 @@ export default function Home1() {
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              PT.NUSAINA GROUP
+              NUSAINA GROUP
             </h1>
             <p className="mt-6 text-lg leading-8 text-white">
               Pengelolaan pabrik kelapa sawit terbesar yang terletak dimaluku

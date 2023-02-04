@@ -8,6 +8,7 @@ import Home2 from "@/components/Home2";
 import ContactUs from "@/components/ContactUs";
 import Home4 from "@/components/Home4";
 import Home5 from "@/components/Home5";
+import Home3 from "@/components/Home3";
 
 export default function Home() {
   return (
@@ -41,6 +42,13 @@ export default function Home() {
             <div>
               <Home4 />
             </div>
+          </div>
+
+          <div className=" hero41 top-0 flex flex-col items-center justify-center mb-24">
+          <h1 className="text-2xl mt-10 pb-8 font-bold text-gray-700">
+              NUSAINA GROUP MENGELOLA
+            </h1>
+            <Home3 />
           </div>
 
           <div className=" hero4 top-0 flex flex-col items-center justify-center mb-24">

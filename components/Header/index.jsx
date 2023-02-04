@@ -113,14 +113,14 @@ export default function Example() {
         </Link>
       </li>
 
-      <div className="relative text-gray-600">
+      {/* <div className="relative text-gray-600">
         <input
           type="search"
           name="cari"
           placeholder="Cari sesuatu"
           className="bg-white h-8 px-5  rounded-full text-sm focus:outline-none focus:outline-green-700/50 focus:border-none border border-gray-500/50 w-full "
         />
-      </div>
+      </div> */}
     </ul>
   );
 
