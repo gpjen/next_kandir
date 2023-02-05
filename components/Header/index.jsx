@@ -112,6 +112,11 @@ export default function Example() {
           Karir
         </Link>
       </li>
+      <li className="p-1 text-sm font-semibold text-gray-600/80 hover:text-gray-700">
+        <Link href="/FAQ" className="flex items-center">
+          FAQ
+        </Link>
+      </li>
 
       {/* <div className="relative text-gray-600">
         <input

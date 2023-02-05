@@ -38,8 +38,8 @@ export default function Home() {
           <div id="hero2" className="hero2 pb-11">
             <Home4 />
           </div>
-          <div className=" hero41 top-0 flex flex-col items-center justify-center mb-24">
-            <h1 className="container text-2xl mt-16 mb-5 font-extrabold leading-8 text-gray-800 dark:text-white sm:text-3xl sm:leading-9">
+          <div className=" hero41 top-0 flex flex-col items-center justify-center mt-16 mb-32">
+            <h1 className="container text-center text-2xl mt-16 mb-5 font-extrabold leading-8 text-gray-800 dark:text-white sm:text-3xl sm:leading-9">
               NUSAINA GROUP MENGELOLA
             </h1>
             <Home3 />
@@ -56,7 +56,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero5 py-20">
-            <h1 className="text-2xl font-extrabold leading-8 dark:text-white sm:text-3xl sm:leading-9 text-center text-gray-800">
+            <h1 className="text-2xl font-extrabold leading-8 mb-5 dark:text-white sm:text-3xl sm:leading-9 text-center text-gray-800">
               KONTAK KAMI
             </h1>
             <ContactUs />

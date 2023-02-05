@@ -14,33 +14,33 @@ export default function ContactUs() {
     <div>
       <div className="container flex justify-center items-center gap-3 flex-col-reverse ">
         <div className="w-1/2 py-10">
-          <h4 className="text-center mb-8 font-bold text-gray-700">
+          <h4 className="text-center mb-10 font-bold text-gray-700">
             Sosial Media
           </h4>
           <span className="mx-auto flex justify-center items-center">
             <Link
               href="https://facebook.com/nusainagroup"
-              className="flex justify-center items-center text-xl  text-gray-500 hover:text-gray-700 hover:scale-110"
+              className="flex justify-center items-center text-sm  text-gray-500 hover:text-gray-700 hover:scale-110 transition-all duration-150"
             >
-              <FaFacebook /> <p className="lg:ml-3 font-bold hidden lg:inline">FACEBOOK</p> 
+              <FaFacebook className="text-xl" /> <p className="lg:ml-3 font-bold hidden lg:inline">FACEBOOK</p> 
             </Link>
             <Link
               href="https://youtube.com/nusainagroup"
-              className="flex justify-center items-center ml-20 text-xl text-gray-500 hover:text-gray-700 hover:scale-110"
+              className="flex justify-center items-center ml-7 lg:ml-20 text-sm text-gray-500 hover:text-gray-700 hover:scale-110 transition-all duration-150"
             >
-              <FaYoutube /> <p className="lg:ml-3 font-bold hidden lg:inline">YOUTUBE</p> 
+              <FaYoutube className="text-xl" /> <p className="lg:ml-3 font-bold hidden lg:inline">YOUTUBE</p> 
             </Link>
             <Link
               href="https://twitter.com/nusainagroup"
-              className="flex justify-center items-center ml-20 text-xl text-gray-500 hover:text-gray-700 hover:scale-110"
+              className="flex justify-center items-center ml-7 lg:ml-20 text-sm text-gray-500 hover:text-gray-700 hover:scale-110 transition-all duration-150"
             >
-              <FaTwitter /> <p className="lg:ml-3 font-bold hidden lg:inline">TWITTER</p> 
+              <FaTwitter className="text-xl" /> <p className="lg:ml-3 font-bold hidden lg:inline">TWITTER</p> 
             </Link>
             <Link
               href="https://linkedin.com/nusainagroup"
-              className="flex justify-center items-center ml-20 text-sm text-gray-500 hover:text-gray-700 hover:scale-110"
+              className="flex justify-center items-center ml-7 lg:ml-20 text-sm text-gray-500 hover:text-gray-700 hover:scale-110 transition-all duration-150"
             >
-              <FaLinkedin /> <p className="lg:ml-3 font-bold hidden lg:inline">LINKEDIN</p> 
+              <FaLinkedin className="text-xl" /> <p className="lg:ml-3 font-bold hidden lg:inline">LINKEDIN</p> 
             </Link>
           </span>
         </div>
