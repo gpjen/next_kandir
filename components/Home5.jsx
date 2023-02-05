@@ -4,69 +4,97 @@ import React from "react";
 export default function Home5() {
   return (
     <section>
-      <div className="container p-4 mx-auto bg-white max-w-7xl sm:p-6 lg:p-8 dark:bg-gray-800">
+      <div className="container mx-auto bg-white max-w-7xl dark:bg-gray-800">
         <div className="flex flex-wrap -mx-8">
           <div className="w-full px-8 lg:w-1/2">
             <div className="pb-12 mb-12 border-b lg:mb-0 lg:pb-0 lg:border-b-0">
-              <h2 className="mb-4 text-3xl font-bold lg:text-4xl font-heading dark:text-white">
-                Sed ac magna sit amet risus tristique interdum, at vel velit in
-                hac habitasse platea dictumst.
-              </h2>
-              <p className="mb-8 leading-loose text-gray-500 dark:text-gray-300">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-                sagittis, quam nec venenatis lobortis, mi risus tempus nulla,
-                sed porttitor est nibh at nulla. Praesent placerat enim ut ex
-                tincidunt vehicula. Fusce sit amet dui tellus.
+              <h1 className="mb-4 text-2xl font-extrabold leading-8 text-gray-800 dark:text-white sm:text-3xl sm:leading-9">
+                VISI DAN MISI PERUSAHAAN
+              </h1>
+              <p className="mb-8 leading-loose font-semibold text-gray-700 dark:text-gray-300">
+                MENJADIKAN PERUSAHAAN AGROBISNIS TERPADU DAN TERDEPAN DI
+                INDONESIA BAGIAN TIMUR YANG BERBASIS EKONOMI KERAKYATAN.
               </p>
+
+              <div className="shadow-lg overflow-hidden rounded-lg">
+                <Image
+                  src="/1.jpg"
+                  alt="pabrik"
+                  width={400}
+                  height={400}
+                  className="w-full"
+                />
+              </div>
             </div>
           </div>
           <div className="w-full px-8 lg:w-1/2">
-            <ul className="space-y-12">
+            <ul className="space-y-5">
               <li className="flex -mx-4">
                 <div className="px-4">
-                  <span className="flex items-center justify-center w-16 h-16 mx-auto text-2xl font-bold text-blue-600 rounded-full font-heading bg-blue-50">
+                  <span className="flex items-center justify-center w-14 h-14 mx-auto text-2xl font-bold text-green-600 rounded-full font-heading bg-green-50">
                     1
                   </span>
                 </div>
                 <div className="px-4">
-                  <h3 className="my-4 text-xl font-semibold dark:text-white">
-                    Responsive Elements
-                  </h3>
-                  <p className="leading-loose text-gray-500 dark:text-gray-300">
-                    All elements are responsive and provide the best display in
-                    all screen size. It&#x27;s magic !
+                  <p className="leading-loose font-semibold text-gray-700 dark:text-gray-300">
+                    Mengembangkan perkebunan kelapa sawit dengan produk yang
+                    berkwalitas dan mempunyai daya saing tinggi.
                   </p>
                 </div>
               </li>
               <li className="flex -mx-4">
                 <div className="px-4">
-                  <span className="flex items-center justify-center w-16 h-16 mx-auto text-2xl font-bold text-blue-600 rounded-full font-heading bg-blue-50">
+                  <span className="flex items-center justify-center w-14 h-14 mx-auto text-2xl font-bold text-green-600 rounded-full font-heading bg-green-50">
                     2
                   </span>
                 </div>
                 <div className="px-4">
-                  <h3 className="my-4 text-xl font-semibold dark:text-white">
-                    Flexible Team
-                  </h3>
-                  <p className="leading-loose text-gray-500 dark:text-gray-300">
-                    Flexibility is the key. All team is available 24/24 and
-                    joinable every day on our hotline.
+                  <p className="leading-loose font-semibold text-gray-700 dark:text-gray-300">
+                    Mengelola portofolio bisnis dengan pola manajemen moderen
+                    yang melibatkan tenaga profesional untuk menghasilkan nilai
+                    tambah bagi stakeholder.
                   </p>
                 </div>
               </li>
               <li className="flex -mx-4">
                 <div className="px-4">
-                  <span className="flex items-center justify-center w-16 h-16 mx-auto text-2xl font-bold text-blue-600 rounded-full font-heading bg-blue-50">
+                  <span className="flex items-center justify-center w-14 h-14 mx-auto text-2xl font-bold text-green-600 rounded-full font-heading bg-green-50">
                     3
                   </span>
                 </div>
                 <div className="px-4">
-                  <h3 className="my-4 text-xl font-semibold dark:text-white">
-                    Ecologic Software
-                  </h3>
-                  <p className="leading-loose text-gray-500 dark:text-gray-300">
-                    Our Software are ecologic and responsable. Green is not just
-                    a color, it&#x27;s a way of life.
+                  <p className="leading-loose font-semibold text-gray-700 dark:text-gray-300">
+                    Mengembangkan sumber daya manusia yang mempunyai etika kerja
+                    dan produktifitas tinggi.
+                  </p>
+                </div>
+              </li>
+              <li className="flex -mx-4">
+                <div className="px-4">
+                  <span className="flex items-center justify-center w-14 h-14 mx-auto text-2xl font-bold text-green-600 rounded-full font-heading bg-green-50">
+                    4
+                  </span>
+                </div>
+                <div className="px-4">
+                  <p className="leading-loose font-semibold text-gray-700 dark:text-gray-300">
+                    Memberikan kontribusi bagi pengembangan regional dan
+                    nasional melalui pemberdayaan ekonomi kerakyatan dan
+                    pengentasan kemiskinan dengan membuka lapangan kerja seluas
+                    - luasnya.
+                  </p>
+                </div>
+              </li>
+              <li className="flex -mx-4">
+                <div className="px-4">
+                  <span className="flex items-center justify-center w-14 h-14 mx-auto text-2xl font-bold text-green-600 rounded-full font-heading bg-green-50">
+                    5
+                  </span>
+                </div>
+                <div className="px-4">
+                  <p className="leading-loose font-semibold text-gray-700 dark:text-gray-300">
+                    Dengan pola kemitraan <em>(Corporate Farming)</em>,
+                    mengembangkan usaha terpadu yang melibatkan masyarakat dan
+                    karyawan sebagai mitra usaha.
                   </p>
                 </div>
               </li>

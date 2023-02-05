@@ -7,9 +7,9 @@ export default function Home4() {
       <div className="relative">
         <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div className="ml-auto lg:col-start-2 lg:max-w-2xl">
-            <h4 className="mt-2 text-2xl font-extrabold leading-8 text-gray-800 dark:text-white sm:text-3xl sm:leading-9">
-              Sejarah Singkat
-            </h4>
+            <h1 className="mt-2 text-2xl font-extrabold leading-8 text-gray-800 dark:text-white sm:text-3xl sm:leading-9">
+              SEJARAH SINGKAT
+            </h1>
             <p className="mt-4 text-md text-justify leading-6 text-gray-500 dark:text-gray-300">
               Nusaina Group merupakan perusahaan moderen yang bergerak diindustri perkebunan dan pengelolaan kelapa sawit sesuai dengan ______ yang di terbitkan pada ______ . Nusaina Group didirikan sejak tanggal ___-___-1999 oleh Dr. SIHAR P.H. SITORUS, BSBA., M.B.A. Kegiatan usaha utama Perseroan yaitu penanaman tanaman kelapa sawit, pemanenan dan pengolahan TBS yang menghasilkan CPO serta Palm Kernel. Kebun dan fasilitas pengolahan TBS Perseroan berada di Kabupaten Maluku Tengah, Provinsi Maluku. 
             </p>

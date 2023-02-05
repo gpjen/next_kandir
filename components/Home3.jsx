@@ -14,7 +14,7 @@ export default function Home3() {
               </div>
             </div>
             <h1 className="text-3xl sm:text-4xl xl:text-5xl font-bold text-gray-700 mt-12 group-hover:text-gray-50">
-              3589
+              1700
             </h1>
             <div className="flex flex-row justify-between group-hover:text-gray-200">
               <p>Kariawan</p>
@@ -48,7 +48,7 @@ export default function Home3() {
               </div>
             </div>
             <h1 className="text-3xl sm:text-4xl xl:text-5xl font-bold text-gray-700 mt-12 group-hover:text-gray-50">
-              12345
+              5421
             </h1>
             <div className="flex flex-row justify-between group-hover:text-gray-200">
               <p>Hektar Kebun</p>
@@ -65,10 +65,10 @@ export default function Home3() {
               </div>
             </div>
             <h1 className="text-3xl sm:text-4xl xl:text-5xl font-bold text-gray-700 mt-12 group-hover:text-gray-50">
-              10
+              2
             </h1>
             <div className="flex flex-row justify-between group-hover:text-gray-200">
-              <p>Pabrik Kelapa Sawit</p>
+              <p>Pabrik</p>
             </div>
           </div>
         </div>

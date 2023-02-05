@@ -128,7 +128,7 @@ export default function Example() {
     <header className="sticky top-0 z-10 mx-auto" style={{maxWidth:"1700px"}}>
       <Navbar
         fullWidth={true}
-        className="mx-auto w-full py-2 rounded-xl overflow-hidden rounded-t-none px-4 lg:px-10 lg:py-4 backdrop-saturate-200 backdrop-blur-2xl bg-opacity-70"
+        className="mx-auto w-full py-2 overflow-hidden px-4 lg:px-10 lg:py-4 backdrop-saturate-200 backdrop-blur-2xl bg-opacity-70"
       >
         <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
           <Link

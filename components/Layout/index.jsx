@@ -7,7 +7,7 @@ export default function Layout(props) {
   return (
     <>
       <Header />
-        <main style={{ marginTop: "-30px", maxWidth:"1700px"}} className="mx-auto" >{children}</main>
+        <main style={{  maxWidth:"1700px"}} className="mx-auto" >{children}</main>
       <Footer />
     </>
   );
