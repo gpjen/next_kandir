@@ -5,8 +5,8 @@ export default function Home5() {
   return (
     <section>
       <div className="container mx-auto bg-white max-w-7xl dark:bg-gray-800">
-        <div className="flex flex-wrap -mx-8">
-          <div className="w-full px-8 lg:w-1/2">
+        <div className="flex flex-wrap lg:-mx-8">
+          <div className="w-full lg:w-1/2">
             <div className="pb-12 mb-12 border-b lg:mb-0 lg:pb-0 lg:border-b-0">
               <h1 className="mb-4 text-2xl font-extrabold leading-8 text-gray-800 dark:text-white sm:text-3xl sm:leading-9">
                 VISI DAN MISI PERUSAHAAN
