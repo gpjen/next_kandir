@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home4() {
   return (
-    <div className="relative max-w-screen-xl p-4 px-4 mx-auto bg-white dark:bg-gray-800 sm:px-6 lg:px-8 py-26 lg:mt-20">
+    <div className="relative container max-w-screen-xl mt-24 mx-auto bg-white dark:bg-gray-800 ">
       <div className="relative">
         <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div className="ml-auto lg:col-start-2 lg:max-w-2xl">

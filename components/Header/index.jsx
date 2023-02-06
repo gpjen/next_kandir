@@ -60,26 +60,11 @@ export default function Example() {
         </Menu>
       </li>
 
-      <li>
-        <Menu placement="top-start">
-          <MenuHandler>
-            <div className="flex text-sm justify-start items-center p-1 font-semibold text-gray-600/80 hover:text-gray-700 cursor-pointer">
-              Investor <FaCaretDown />{" "}
-            </div>
-          </MenuHandler>
-          <MenuList className="text-gray-700 bgBlur">
-            <Link href="/investor/annualReport" className="outline-none">
-              <MenuItem>Laporan Tahunan</MenuItem>
-            </Link>
-            <Link href="/investor/financialStatements" className="outline-none">
-              <MenuItem>Laporan Keuangan</MenuItem>
-            </Link>
-            <Link href="/investor/prospect" className="outline-none">
-              <MenuItem>Prospek</MenuItem>
-            </Link>
-          </MenuList>
-        </Menu>
-      </li>
+      <Link href="/investor" className="flex items-center">
+        <li className="p-1 text-sm font-semibold text-gray-600/80 hover:text-gray-700">
+          Investor
+        </li>
+      </Link>
 
       <li>
         <Menu placement="top-start">

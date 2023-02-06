@@ -44,7 +44,7 @@ export default function Home() {
             </h1>
             <Home3 />
           </div>
-          <div className=" hero4 top-0 flex flex-col items-center justify-center mb-24">
+          <div className=" hero4 top-0 flex flex-col items-center justify-center mb-28">
             <Home5 />
           </div>
           <div className=" hero3 py-10 shadow top-0 flex flex-col items-center justify-center bg-blue-gray-700 text-white">
